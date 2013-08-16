@@ -19,6 +19,17 @@ li:before{
 
 }
 
+li{
+	padding-left: 1em;
+	text-indent: -1em;
+}
+
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
 body{
 	background-size: cover;
     background-repeat: no-repeat;
@@ -185,7 +196,7 @@ button:focus {
 }
 
 .registration-box{
-	margin-top: 10%;
+	margin-top: 5%;
 }
 
 #close{
