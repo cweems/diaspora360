@@ -116,6 +116,7 @@ body{
 	font-variant: small-caps;
 	margin: 0px;
 	font-family: 'Lato' sans-serif !important;
+	text-shadow: rgb(0, 0, 0) 0px 1px 2px;
 }
 
 textarea, input{
@@ -258,4 +259,9 @@ button:focus {
 	-webkit-transition: background-color .2s linear;
 	-moz-transition: background-color .2s linear;
 	-o-transition: background-color .2s linear;
+}
+
+#small-logo{
+	max-height: 40px;
+	width: auto;
 }
