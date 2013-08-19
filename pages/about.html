@@ -1,0 +1,75 @@
+<html ng-app>
+<head>
+<title>African Diaspora 360 | About</title>
+<meta property="og:site_name" content="AD360">
+<meta property="og:title" content="African Diaspora 360">
+<meta property="og:url" content="http://africandiaspora360.com">
+<meta property="og:image" content="">
+<meta property="og:description" content="Sign up here to connect with African Diaspora near you.">
+<link href="../css/style.css" rel="stylesheet">
+<link href="../css/bootstrap.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+<script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+<script src="js/bootstrap.js" type="text/javascript"></script>
+<script src="http://code.angularjs.org/1.0.6/angular.min.js"></script>
+<script src="../js/script.js"></script>
+</head>
+<script type="text/javascript">
+        $(window).load(function() {
+            $('.bg').addClass('ease-in');
+            $('.loading').addClass('hide');
+        });  
+</script>
+<body>
+<img class="loading" src="../img/1.gif">
+<div class="light-bg">
+	
+	<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <a class="navbar-brand" href="#"><img class="small-logo" src="../img/logo-small.png"></a>
+  </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div>
+    <ul class="nav navbar-nav">
+      <li><a href="../index.html">Home</a></li>
+    </ul>
+    <a href="https://twitter.com/intent/tweet?original_referer=http:%2F%2Fafricandiaspora360.com&related=AD360&text=Join%20African%20Diaspora%20360%20to%20find%20individuals%20and%20organizations%20looking%20to%20make%20a%20difference%20in%20Africa%20&tw_p=tweetbutton&url=http:%2F%2Fafricandiaspora360.com/"><img class="pull-right small-logo" id="twitter" src="../img/twitter.png"></a>
+    <ul class="nav navbar-nav">
+    <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Languages<b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">French</a></li>
+        </ul>
+      </li>
+     </ul>
+  </div><!-- /.navbar-collapse -->
+</nav>	
+	
+	<div class="container">
+	<h1 id="title">About Us</h1>
+	<br>
+	<br>
+	<div class="col-lg-6">
+	<img class="pull-left bio-img img-rounded" src="../img/bethel.jpg">
+		<p>Bethel Alemu has over two years of experience supporting multiple offices within USAID with several Knowledge Management (KM) activities. Ms. Alemu is currently a Monitoring & Evaluation (M&E) specialist at the QED Group, LLC where she supports the USAID Knowledge Driven Microenterprise Development (KDMD) Project. Prior to her work at the QED Group, Ms. Alemu worked for the Center on Budget and Policy Priorities (CBPP) doing research for the International Budget Partnership initiative. Ms. Alemu has also previously worked in Sierra Leone where she served on the editorial team to publish the 2010 country Millennium Development Goal Report for Sierra Leone. Originally from Ethiopia, she has also spent considerable time living and studying in Zimbabwe. She has Bachelor of Science in Economics and a Minor in Business Administration from Northeastern University. Ms. Alemu is also currently finishing up her Master of Arts in International Development Studies and Economic Development from the George Washington University.</p>
+	</div>
+	<div class="col-lg-6">
+	<img class="pull-left bio-img img-rounded" src="../img/jessica.jpg">
+		<p>
+			Originally from Nigeria, Jessica Ogonor grew up in Lithia Springs, Georgia and attended Northeastern University in Boston, MA. There she studied business with a focus on Entrepreneurship and Supply Chain Management. On her last trip to Nigeria, Jessica assisted her mother in the development of the primary through secondary school she opened two years prior. She also assisted in the start of a new program to offer basic computer classes to adults in the local area that would use the school’s facility while the students were on break. Jessica currently works on the logistics side of the solar industry.
+		</p>
+	</div>
+</div>
+
+</div>
+
+
+<script type="text/javascript">
+var images = ['../image1.png', '../image2.png', '../image3.png', '../image4.jpg', '../image5.jpg', '../image6.jpg'];
+$('.bg').css({'background-image': 'url(img/' + images[Math.floor(Math.random() * images.length)] + ')'});
+</script>
+</body>
+
+</html>

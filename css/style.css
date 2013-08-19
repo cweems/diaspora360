@@ -94,7 +94,7 @@ body{
 	text-shadow: rgb(0, 0, 0) 0px 1px 2px;	
 	font-size: 25px !important;
 	margin: 0px;
-	margin-top: 35%;
+	margin-top: 25%;
 }
 
 
@@ -215,13 +215,7 @@ button:focus {
 	margin-right: auto;
 }
 
-.css-form input.ng-invalid.ng-dirty {
-        background-color: #FA787E;
-      }
-    
-      .css-form input.ng-valid.ng-dirty {
-        background-color: #78FA89;
-      }
+
       
 #org-button{
 	background-color: #1ABC9C;
@@ -261,7 +255,47 @@ button:focus {
 	-o-transition: background-color .2s linear;
 }
 
-#small-logo{
+.small-logo{
 	max-height: 40px;
 	width: auto;
+	opacity: .5;
+	transition: opacity .2s linear;
+	-webkit-transition: opacity .2s linear;
+	-moz-transition: opacity .2s linear;
+	-o-transition: opacity .2s linear;
+}
+
+#small-logo:hover{
+	opacity: 1;
+	transition: opacity .2s linear;
+	-webkit-transition: opacity .2s linear;
+	-moz-transition: opacity .2s linear;
+	-o-transition: opacity .2s linear;
+}
+
+.ss-q-title{
+	font-size: 15px;
+}
+
+#twitter{
+	margin-top: 5px;
+}
+
+.css-form input.ng-invalid.ng-dirty {
+   	border-color: #FA787E;
+}
+    
+.css-form input.ng-valid.ng-dirty {
+    border-color: #78FA89;
+}
+
+.bio-img{
+	height: 100px;
+	width: auto;
+	margin-right: 15px;
+}
+
+.light-bg{
+	background-color: grey;
+	height: 100%;
 }

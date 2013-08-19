@@ -20,7 +20,7 @@
             $('.loading').addClass('hide');
         });  
 </script>
-<body>
+<body class="black">
 <img class="loading" src="img/1.gif">
 <div class="bg">
 <div class="grey">
@@ -28,7 +28,7 @@
 	<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
   <!-- Brand and toggle get grouped for better mobile display -->
   <div class="navbar-header">
-    <a class="navbar-brand" href="#"><img id="small-logo" src="img/logo-small.png"></a>
+    <a class="navbar-brand" href="#"><img class="small-logo" src="img/logo-small.png"></a>
   </div>
 
   <!-- Collect the nav links, forms, and other content for toggling -->
@@ -36,8 +36,9 @@
     <ul class="nav navbar-nav">
       <li><a href="pages/about.html">About</a></li>
     </ul>
-    <ul class="pull-right nav navbar-nav">
-    <li class="pull-right dropdown">
+    <a href="https://twitter.com/intent/tweet?original_referer=http:%2F%2Fafricandiaspora360.com&related=AD360&text=Join%20African%20Diaspora%20360%20to%20find%20individuals%20and%20organizations%20looking%20to%20make%20a%20difference%20in%20Africa%20&tw_p=tweetbutton&url=http:%2F%2Fafricandiaspora360.com/"><img class="pull-right small-logo" id="twitter"src="img/twitter.png"></a>
+    <ul class="nav navbar-nav">
+    <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Languages<b class="caret"></b></a>
         <ul class="dropdown-menu">
           <li><a href="#">French</a></li>
@@ -70,7 +71,7 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <button id="org-button" type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
           <h4 class="modal-title">Registration for Organizations</h4>
         </div>
         <div class="modal-body">
@@ -83,10 +84,9 @@
 							<div dir="ltr" class="ss-item  ss-text">
 								<div class="ss-form-entry">
 									<label class="ss-q-item-label" for="entry_1051320116">
-										<div class="ss-q-title">Organization Name:</div>
 										<div class="ss-q-help ss-secondary-text" dir="ltr"></div>
 									</label>
-								<input ng-model="user.name" type="text" name="entry.1051320116" value="" class="ss-q-short" id="entry_1051320116" dir="auto">
+								<input placeholder="Organization Name" ng-model="user.name" type="text" name="entry.1051320116" value="" class="ss-q-short" id="entry_1051320116" dir="auto">
 								</div>
 							</div>
 						</div>
@@ -111,30 +111,29 @@
 						<div dir="ltr" class="ss-item  ss-paragraph-text">
 							<div class="ss-form-entry">
 								<label class="ss-q-item-label" for="entry_301352241">
-									<div class="ss-q-title">Description of your organization:</div>
 									<div class="ss-q-help ss-secondary-text" dir="ltr"></div>
 								</label>
-								<textarea name="entry.301352241" rows="8" cols="0" class="ss-q-long" id="entry_301352241" dir="auto"></textarea>
+								<textarea placeholder="A brief description of your organization" name="entry.301352241" rows="8" cols="0" class="ss-q-long" id="entry_301352241" dir="auto"></textarea>
 							</div>
 						</div>
 					</div> 
 					<div class="ss-form-question errorbox-good">
-<div dir="ltr" class="ss-item  ss-text"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1118697929"><div class="ss-q-title">Website Link:
+<div dir="ltr" class="ss-item  ss-text"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1118697929"><div class="ss-q-title">
 </div>
 <div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
-<input type="text" name="entry.1118697929" value="" class="ss-q-short" id="entry_1118697929" dir="auto">
+<input placeholder="Link to your website" type="text" name="entry.1118697929" value="" class="ss-q-short" id="entry_1118697929" dir="auto">
 
 </div></div></div> <div class="ss-form-question errorbox-good">
-<div dir="ltr" class="ss-item  ss-text"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1485030803"><div class="ss-q-title">Email:
+<div dir="ltr" class="ss-item  ss-text"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1485030803"><div class="ss-q-title">
 </div>
 <div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
-<input type="text" name="entry.1485030803" value="" class="ss-q-short" id="entry_1485030803" dir="auto">
+<input placeholder="Email" type="text" name="entry.1485030803" value="" class="ss-q-short" id="entry_1485030803" dir="auto">
 
 </div></div></div> <div class="ss-form-question errorbox-good">
-<div dir="ltr" class="ss-item  ss-text"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1641152937"><div class="ss-q-title">City:
+<div dir="ltr" class="ss-item  ss-text"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1641152937"><div class="ss-q-title">
 </div>
 <div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
-<input type="text" name="entry.1641152937" value="" class="ss-q-short" id="entry_1641152937" dir="auto">
+<input placeholder="City" type="text" name="entry.1641152937" value="" class="ss-q-short" id="entry_1641152937" dir="auto">
 
 </div></div></div> <div class="ss-form-question errorbox-good">
 <div dir="ltr" class="ss-item  ss-select"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_539877159"><div class="ss-q-title">Country:
@@ -243,22 +242,11 @@
         Name:
           <input type="text" ng-model="user.name" required /><br />
         E-mail: <input type="email" ng-model="user.email" required /><br />
-        Gender: <input type="radio" ng-model="user.gender" value="male" />male
-        <input type="radio" ng-model="user.gender" value="female" />female<br />
         <button type="button" class="btn btn-default" ng-click="update(user)">SAVE</button>
       </form>
     </div>
     
-    <style type="text/css">
-      .css-form input.ng-invalid.ng-dirty {
-        background-color: #FA787E;
-      }
-    
-      .css-form input.ng-valid.ng-dirty {
-        background-color: #78FA89;
-      }
-    </style>
-        </div>
+         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
