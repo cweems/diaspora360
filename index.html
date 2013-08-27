@@ -34,7 +34,7 @@
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div>
     <ul class="nav navbar-nav">
-      <li><a href="pages/about.html">About</a></li>
+      <li><a data-toggle="modal" href="#about">About</a></li>
     </ul>
     <a href="https://twitter.com/intent/tweet?original_referer=http:%2F%2Fafricandiaspora360.com&related=AD360&text=Join%20African%20Diaspora%20360%20to%20find%20individuals%20and%20organizations%20looking%20to%20make%20a%20difference%20in%20Africa%20&tw_p=tweetbutton&url=http:%2F%2Fafricandiaspora360.com/"><img class="pull-right small-logo" id="twitter"src="img/twitter.png"></a>
     <ul class="nav navbar-nav">
@@ -222,10 +222,11 @@
 		</div>
 		<div class="col-lg-6">
 			<p class="vision-2">AD 360 helps African Diaspora and local organizations connect to find solutions to Africa's challenges.</p>
-			<ul style="margin-top:20px;">
-				<li>&rsaquo; Find other socially driven organizations making a difference in Africa</li>
-				<li>&rsaquo; Learn best practices from other organizations in your field</li>
-				<li>&rsaquo; Network with other key stakeholders linking the global African Diaspora, donors and implementing partner organizations on the ground</li>
+			<ul class="home-list" style="margin-top:20px;">
+				<li>&rsaquo; Make vital connections</li>
+				<li>&rsaquo; Engage in knowledge sharing</li>
+				<li>&rsaquo; Access valuable resources</li>
+				<li>&rsaquo; Increase your exposure</li>
 			</ul>
 		</div>
 	</div>
@@ -237,14 +238,38 @@
           <h4 class="modal-title">Registration for Individuals</h4>
         </div>
         <div class="modal-body">
-          <div ng-controller="Controller">
-      <form novalidate class="css-form">
-        Name:
-          <input type="text" ng-model="user.name" required /><br />
-        E-mail: <input type="email" ng-model="user.email" required /><br />
-        <button type="button" class="btn btn-default" ng-click="update(user)">SAVE</button>
-      </form>
-    </div>
+
+        <iframe id="hidden_iframe" name="hidden_iframe" onload="if(submitted) {window.location='pages/received.html';}" style="display:none;"></iframe>
+
+        <form action="https://docs.google.com/forms/d/1oVktD3CNjNcmzce8qvwf-1ZOLma87PDJJNvT2mCkwsQ/formResponse" method="POST" id="ss-form" target="hidden_iframe" onsubmit="submitted=true;">
+      	<ol style="padding-left: 0">
+		<div class="ss-form-question errorbox-good">
+		<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+		<input type="text" name="entry.65706209" value="" placeholder="Name" class="ss-q-short valid" id="entry_65706209" dir="auto" title="">
+		<div class="error-message"></div>
+		</div>
+		<div class="ss-form-question errorbox-good">
+		<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+		<input type="text" name="entry.891116534" placeholder="email" value="" class="ss-q-short" id="entry_891116534" dir="auto" title="">
+		</div>
+<input type="hidden" name="draftResponse" value="[]
+">
+<input type="hidden" name="pageHistory" value="0">
+
+
+		<div class="ss-item ss-navigate">
+
+		<table id="navigation-table">
+			<tbody>
+				<tr>
+					<td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
+					<input type="submit" name="submit" value="Submit" class="btn btn-default" id="ss-submit">
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	</ol>
+	</form>
     
          </div>
         <div class="modal-footer">
@@ -253,6 +278,52 @@
       </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
   </div><!-- /.modal -->
+
+  <div class="modal fade" id="about">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">About African Diaspora 360</h4>
+        </div>
+        <div class="modal-body">
+          
+        <h4>What is AD 360?</h4>
+
+          <p>AD360 in an online platform that aims to close the information gap among organizations and businesses working in Africa through knowledge sharing and building online communities of practice. Through better coordination and engagement, Diaspora organizations will have increased access to resources and opportunities to collaborate; allowing them to create innovative and sustainable solutions to Africa's challenges</p>
+
+          <br>
+        <h4>The Problem</h4>
+          <p>There is widespread desire to 'give back' by the African Diaspora. Diaspora groups outside of Africa make significant contributions, whether monetary or in-kind, back to their countries of origin. However, organizations often 'reinvent the wheel' with highly fragmented projects and programs duplicated across the same regions. Furthermore, diaspora groups who want to start businesses in their home countries do not always have the vital market and regulatory information necessary. Thus the effectiveness of diaspora initiatives is limited due to lack of coordination and access to information, such as best practices and lessons learned.</p>
+
+        <br>
+
+        <h4>The AD360 Platform</h4>
+        <p>The AD360 Platform is a comprehensive directory and a knowledge-sharing hub for Diaspora organizations and businesses with social missions that are active in Africa. Through AD360 organizations will have the opportunity to do the following:</p>
+        	<ul>
+				<li>&rsaquo; Make vital connections</li>
+					<li>     - Find other socially driven organizations working in the region</li>
+					<li>     - Join a community of practice to build your network and find opportunities for
+					collaboration</li>
+				<li>&rsaquo; Engage in knowledge sharing</li>
+					<li>     - Participate in discussion forums - Share ideas, find out what others are doing and how
+					<li>     - Review and contribute to our Lessons Learned Notes on different topics</li>
+				<li>&rsaquo; Access valuable resources</li>
+					<li>Learn from the best practices from other organizations in similar industries</li>
+					<li>Access information and guidance on funding opportunities, legal processes, technical
+notes</li>
+				<li>&rsaquo; Increase your exposure</li>
+					<li>Register in our directory to take advantage of the platform's extended network and outreach channels to increase traffic to your site</li>
+					<li>Highlight your project successes in our blog</li>
+			</ul>
+
+         </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div>
 
 </div>
 </div>
